@@ -15,3 +15,9 @@ git push -u origin <branch name>
 
 clone
 git clone <git url>
+
+create an switch to new branch
+git checkout -b <branch name>
+
+to see the branch list
+git brach
