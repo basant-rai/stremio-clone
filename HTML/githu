@@ -1,0 +1,17 @@
+command line 
+git init (initialize)
+
+Add files
+git add .
+
+Commit/comment
+git commit -m "write commit description"
+
+pull 
+git pull
+
+push 
+git push -u origin <branch name>
+
+clone
+git clone <git url>
