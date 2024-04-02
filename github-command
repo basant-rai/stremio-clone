@@ -1,23 +1,30 @@
-command line 
+# command line 
+# Initialize
 git init (initialize)
 
-Add files
+# Add files
 git add .
 
-Commit/comment
+# Commit/comment
 git commit -m "write commit description"
 
-pull 
+# pull 
 git pull
 
-push 
+# push 
 git push -u origin <branch name>
 
-clone
+# clone
 git clone <git url>
 
-create an switch to new branch
+#create new branch
+git branch <branch-name>
+
+# create an switch to new branch
 git checkout -b <branch name>
 
-to see the branch list
-git brach
+#To switch to new branch
+git checkout <branch name>
+
+# to see the branch list
+git branch
