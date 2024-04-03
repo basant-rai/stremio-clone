@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  border-width: 0;
+}
+
+.profile {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+}
+
+label {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border-color: blue;
+  font-size: 16px;
+  text-transform: capitalize;
+  /* display: block; */
+  width: 100%;
+}
+form {
+  background-color: chocolate;
+  margin: 10px;
+  padding: 10px;
+}
+textarea {
+  width: 100%;
+  border-radius: 8px;
+  border-color: blue;
+}
+
+button {
+  padding: 10px 60px;
+  border-radius: 8px;
+  display: inline;
+}
+
+select {
+  padding: 10px 60px;
+  border-radius: 8px;
+  display: inline;
+}
+select option {
+  background-color: blueviolet;
+  position: fixed;
+}
