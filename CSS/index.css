@@ -1,0 +1,61 @@
+/* CSS  */
+
+/* Internal CSS */
+/* External CSS */
+/* Inline CSSS */
+
+/* :root {
+  box-sizing: border-box;
+  border-width: 0;
+} */
+
+.css-external {
+  /* font-color */
+  color: yellowgreen;
+}
+
+/* margin  */
+.margin-css {
+  border: 1px solid black;
+  margin: 50px;
+  background-color: blueviolet;
+  color: white;
+  /* padding: 10px 50px 20px 100px; */
+  /* top right bottom left */
+
+  padding: 10px 50px;
+  /* top-bottom left-right *
+
+ /* margin: */
+}
+
+/* h5 {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: monospace;
+  font-style: italic;
+  color: brown;
+  background-color: blue;
+  display: inline;
+}
+
+span{
+  display: block;
+  background-color: yellow;
+
+} */
+
+/* Inlne Element with csss */
+
+.demo-1 {
+  background-color: blue;
+  padding: 50px;
+}
+
+.demo-2 {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  /* display: inline; */
+  display: inline-block;
+}
