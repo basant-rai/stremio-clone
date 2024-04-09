@@ -19,5 +19,3 @@ git clone <git url>
 create an switch to new branch
 git checkout -b <branch name>
 
-to see the branch list
-git branch
