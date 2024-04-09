@@ -1,0 +1,36 @@
+/* 
+CSS - Cascading Style Sheets
+    - apply style to html pages
+
+  structure
+    selector {
+        attribute: value;
+        attributes: values;
+    }
+
+    selector - html element, class, id, to which style is applied
+    attribute - property which is to be changed , color, font size, font, background, ....
+    value - value of the attribute, 
+
+    selector type -
+        1. element selector - all the html elements, eg: h1, h2, body, p, table, ....... 
+
+        2. class selector - user defined classes, 
+        uses prefix dot (.) to apply css
+        multiple classes can be used to apply css.
+        
+        3. id selector - user defined ids,
+        uses prefix hash (#) to apply css 
+        only one id is allowed/ only single id can be used to apply css.
+
+    Priority: id > class > element
+
+
+    CSS TYPES: 
+        1. Internal CSS - same html file, in head section, using 'style' tag.
+        2. Inline CSS - same html file, inside same tag, using 'style' attribute 
+        3. External CSS - separate css file with extension '.css'. imported using link tag in html page in head section, no style keyword is required
+
+    Priority: inline > (internal = external) 
+    internal external whichever is defined at last
+*/

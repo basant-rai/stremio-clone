@@ -23,8 +23,5 @@ git branch <branch-name>
 # create an switch to new branch
 git checkout -b <branch name>
 
-#To switch to new branch
-git checkout <branch name>
-
-# to see the branch list
+to see the branch list
 git branch

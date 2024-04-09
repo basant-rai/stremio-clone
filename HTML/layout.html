@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            /* height: 10vh; */
+            width: 100%;
+            background-color: yellowgreen;
+            padding: 10px;
+        }
+
+        .middle {
+            display: flex;
+        }
+
+        .left {
+            height: 80vh;
+            width: 25vw;
+            background-color: aquamarine;
+        }
+
+        .right {
+            width: 75vw;
+        }
+
+        .right-top {
+            display: none;
+            /* visibility: hidden; */
+            height: 40%;
+            width: 100%;
+            background-color: purple;
+        }
+
+        .right-bottom {
+            display: flex;
+            height: 60%;
+            /* justify-content: space-evenly; */
+        }
+
+        .right-bottom-left {
+            background-color: brown;
+            width: 50%;
+            height: 100%;
+        }
+
+        .right-bottom-right {
+            background-color: aqua;
+            width: 50%;
+            height: 100%;
+        }
+
+        .footer {
+            height: 10vh;
+            background-color: green;
+        }
+
+        .header>ul {
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            padding: 0;
+        }
+        li{
+            position: relative;
+        }
+        .sub-category{
+            list-style: none;
+            display: none;
+            position: absolute;
+            background-color: yellow;
+        }
+        .sub-category li{
+            padding: 5px 10px;
+        }
+        li:hover .sub-category{
+            display: block;
+            background-color: aquamarine;
+        }
+
+        .sub-sub-category{
+            position: absolute;
+            left:100%;
+            top: 0%;
+            background-color: aquamarine;
+            display: none;
+            list-style: none;
+            /* padding-left: 10px; */
+        }
+        .sub-category li:hover .sub-sub-category{
+            display: block;
+            
+        } 
+        .sub-category li:hover{
+            background-color: yellow;
+        }
+        .sub-sub-category li:hover{
+            background-color: yellow;
+        }
+        ul{
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <ul class="menuitem">
+            <li>Home</li>
+            <li>Category
+                <ul class="sub-category">
+                    <li>Computers & Laptops
+                        <ul class="sub-sub-category">
+                            <li>Apple</li>
+                            <li>DEll</li>
+                            <li>Acer</li>
+                            <li>Asus</li>
+                            <li>Lenovo</li>
+                        </ul>
+                    </li>
+                    
+                    <li>Mobiles
+                        <ul class="sub-sub-category">
+                            <li>Apple</li>
+                            <li>Samsung</li>
+                            <li>Huwawei</li>
+                            <li>Oppo</li>
+                            <li>ONE Plus</li>
+                        </ul>
+                    </li>
+                    <li>Camera</li>
+                    <li>Beauty</li>
+                    <li>Fitness</li>
+                </ul>
+            </li>
+            <li>About</li>
+            <li>Gallery</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="middle">
+        <div class="left">left</div>
+        <div class="right">
+            <div class="right-top">right top</div>
+            <div class="right-bottom">
+                <div class="right-bottom-left">right bottom left</div>
+                <div class="right-bottom-right">right bottom right</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">Footer</div>
+
+
+
+</body>
+
+</html>
