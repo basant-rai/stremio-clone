@@ -57,14 +57,16 @@
     padding: 10px 20px;
   }
 
-  .sign-in, .sign-up{
+  .sign-in,
+  .sign-up {
     border-radius: 50px;
   }
-  .sign-in{
+
+  .sign-in {
     background-color: yellowgreen;
   }
 
-  .sign-up:hover{
+  .sign-up:hover {
     background-color: yellowgreen;
 
   }
@@ -81,8 +83,58 @@
     width: 100%;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: end;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+  .left-top {
+    background-color: yellow;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .left-top-item {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+  }
+
+  .left-bottom {
+
+    height: 90%;
+    background-color: orange;
+    display: flex;
+    /* float: left; */
+    /* flex-wrap: wrap; */
+    justify-content: flex-end;
+  }
+
+  .left-bottom-items {
+    background-color: black;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+
+  }
+
+  .left-bottom-item {
+    height: 180px;
+    width: 200px;
+    background-color: white;
   }
 
   .content-right {
@@ -145,7 +197,23 @@
   <!-- Content -->
   <div class=" middle-content">
     <div class="content-left">
-      left
+      <div class="left-top">
+        <div class="left-top-item">1 </div>
+        <div class="left-top-item">2 </div>
+        <div class="left-top-item"> 3</div>
+        <div class="left-top-item"> 4</div>
+        <div class="left-top-item">5 </div>
+      </div>
+      <div class="left-bottom">
+        <div class="left-bottom-items">
+          <div class="left-bottom-item"> </div>
+          <div class="left-bottom-item"> </div>
+          <div class="left-bottom-item"> </div>
+          <div class="left-bottom-item"> </div>
+          <div class="left-bottom-item"> </div>
+          <div class="left-bottom-item"> </div>
+        </div>
+      </div>
     </div>
     <div class="content-right">
       <div class="right-middle">
