@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* combinators
+        
+        1. Grouping selectors - (,) 
+
+        
+*/
+        .parent1,
+        .parent2,
+        .parent3 {
+            padding: 10px;
+            /* background-color: black; */
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+        }
+
+        .parent1 {
+            background-color: red;
+        }
+
+        .parent2 {
+            background-color: blue;
+        }
+
+        .parent3 {
+            background-color: brown;
+        }
+
+        /* .para,
+        .div1,
+        h1,
+        h2,
+        #small_heading {
+            color: red;
+        } */
+
+        /*2. Descendant selectores - ( ) */
+        .child1 {
+            color: red;
+        }
+
+        .parent1 .child1 {
+            color: white;
+        }
+
+        .parent1 .child2 {
+            height: 50px;
+            width: 50px;
+            background-color: black;
+        }
+
+        /*3. Child selector (>) */
+        .parent>div {
+            color: red;
+        }
+
+        .child2>div {
+            color: green;
+        }
+
+        /*4. General siblings (~)*/
+        .grandchild~div {
+            color: blue;
+        }
+
+        /*5. Adjacent siblings (+) */
+        .grandchild2+h1 {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>Heading 1</h1>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto inventore sequi rerum dolor vel
+        velit corrupti in vitae aperiam doloremque debitis, quasi, minus asperiores deserunt explicabo. Voluptatibus
+        enim quasi minima.</p>
+
+    <h2>Heading</h2>
+
+    <div class="div1">
+        Lorem ipsum dolor sit amet.
+    </div>
+
+    <h6 id="small_heading">heading 6</h6> -->
+
+    <!-- <div class="parent">
+        parent
+        <div class="child1">child1
+            <div class="grandchild1">grandchild1</div>
+        </div>
+        <div class="child2">child2
+            v
+            <div class="grandchild2">grandchild2</div>
+            <h1>heading</h1>
+            <div class="grandchild3">grandchild3</div>
+            <div class="grandchild3">grandchild3</div>
+            <div class="grandchild4">grandchild4</div>
+            <div class="grandchild5">grandchild5</div>
+        </div>
+
+    </div> -->
+
+    <div class="parent">
+        <div class="child">
+            Child
+            <div class="grandchild">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, totam.
+            </div>
+            <div class="grandchild1">
+                Grandchild1
+            </div>
+            <div class="grandchild2">
+                Grandchild2
+            </div>
+            <h1>Heading</h1>
+        </div>
+        <div class="">
+            child2
+        </div>
+    </div>
+
+    <div class="parent1">
+        <p class="child1">Lorem ipsum dolor sit amet.</p>
+        <!-- <p class="child2"></p> -->
+    </div>
+    <div class="parent2">
+        <p class="child1">Lorem ipsum dolor sit amet.</p>
+
+    </div>
+    <div class="parent3">
+        <p class="child1">Lorem ipsum dolor sit amet.</p>
+
+    </div>
+
+</body>
+
+</html>

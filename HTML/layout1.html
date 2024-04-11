@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout1</title>
+</head>
+
+<style>
+  .main-content {
+    display: flex;
+    height: 900px;
+  }
+
+  .left {
+    background-color: yellow;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .right {
+    background-color: blue;
+    width: 100%;
+    color:white;
+    display: flex;
+  }
+  .middle-right{
+    background-color: aqua;
+    width: 100%;
+  }
+  .right-last{
+    background-color: black;
+    width: 100%;
+  }
+  .top-right{
+    background-color: brown;
+    height: 50%;
+  }
+  .bottom-right{
+    background-color: green;
+    height: 50%;
+  }
+</style>
+
+<body>
+  <div class="main-content">
+    <div class="left">
+      Left
+    </div>
+    <div class="right">
+      <div class="middle-right">Middle right</div>
+      <div class="right-last">
+        <div class="top-right">Top right</div>
+        <div class="bottom-right">Bottom right</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
