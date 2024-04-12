@@ -5,167 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flex Layout</title>
+  <link rel="stylesheet" href="../CSS/flex.css" />
 </head>
-
-<style>
-  * {
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-  .container {
-    max-width: 1440px;
-    margin: auto;
-  }
-
-  ul,
-  ol {
-    list-style: none;
-  }
-
-  /* header */
-  header {
-    background-color: rgb(12, 12, 39);
-    color: white;
-  }
-
-  .header-items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo img {
-    height: 50px;
-    width: 50px;
-  }
-
-  .menu-items ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* width: 900px; */
-    gap: 60px;
-  }
-
-  .header-button {
-    display: flex;
-    gap: 20px;
-  }
-
-  button {
-    padding: 10px 20px;
-  }
-
-  .sign-in,
-  .sign-up {
-    border-radius: 50px;
-  }
-
-  .sign-in {
-    background-color: yellowgreen;
-  }
-
-  .sign-up:hover {
-    background-color: yellowgreen;
-
-  }
-
-  /* Content */
-
-  .middle-content {
-    display: flex;
-    height: 800px;
-  }
-
-  .content-left {
-    background-color: blue;
-    width: 100%;
-    color: white;
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    /* align-items: center; */
-  }
-
-  .left-top {
-    background-color: yellow;
-    height: 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0 20px;
-  }
-
-  .left-top-item {
-    border-radius: 50%;
-    height: 60px;
-    width: 60px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-  }
-
-  .left-bottom {
-
-    height: 90%;
-    background-color: orange;
-    display: flex;
-    /* float: left; */
-    /* flex-wrap: wrap; */
-    justify-content: flex-end;
-  }
-
-  .left-bottom-items {
-    background-color: black;
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0;
-
-  }
-
-  .left-bottom-item {
-    height: 180px;
-    width: 200px;
-    background-color: white;
-  }
-
-  .content-right {
-    display: flex;
-    background-color: yellow;
-    width: 100%;
-  }
-
-  .right-middle {
-    background-color: cadetblue;
-    width: 100%;
-  }
-
-  .right-last {
-    width: 100%;
-  }
-
-  .right-top,
-  .right-bottom {
-    height: 50%;
-  }
-
-  .right-bottom {
-    background-color: black;
-    color: white
-  }
-
-  .right-top {
-    background-color: white;
-  }
-</style>
 
 <body>
   <header>
@@ -177,7 +18,15 @@
       <div class="menu-items">
         <ul>
           <li>Home</li>
-          <li>Category</li>
+          <li class="header-item">
+            Category
+            <ul class="sub-items">
+              <li>MongoDB</li>
+              <li>React</li>
+              <li>Node</li>
+              <li>Express</li>
+            </ul>
+          </li>
           <li>About</li>
           <li>Service</li>
           <li>Contact</li>
