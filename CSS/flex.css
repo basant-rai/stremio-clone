@@ -182,11 +182,33 @@ button {
   height: 50%;
 }
 
+.image{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
 .right-bottom {
   background-color: black;
   color: white
 }
 
+.right-box{
+  background-color: yellow;
+  height: 200px;
+  width: 200px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
 .right-top {
+  padding: 10px;
+  width: 100%;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  /* justify-content: flex-end; */
 }
