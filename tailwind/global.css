@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+[type="text"]:focus,
+[type="password"]:focus,
+[type="number"]:focus,
+[type="email"]:focus,
+[type="checkbox"]:focus {
+  border: 2px solid black !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
