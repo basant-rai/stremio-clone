@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>String | JS</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+
+  let str = "Hello World";
+  document.write(str + "<br>");
+
+  str.length
+
+  document.write(str.length + "<br>")
+  // concat
+  document.write(str + "World" + "<br>");
+  // Char at
+  document.write(str.charAt(1) + "<br>");
+
+  // slice(startindex, lastindex)
+  document.write(str.slice(0, 4) + "<br>");
+  // replace
+  document.write(str.replace("Hello", "HI this replaced") + "<br>");
+  // match
+  let str1 = "Hello W";
+  document.write(str.match(str1) + "<br>");
+  // split
+  let str3 = "Apple, Banana, orange"
+  let strArr = str3.split(", ")
+  
+  strArr.map((item)=>{ document.write(`<li>${item}</li>`)})
+  
+  console.log(str3.split(", "));
+  // search
+  // let strSearch = str.search("l");
+  console.log(str.replaceAll("l", "y"))
+  // str.match("")
+  // Lowercase & Uppercase
+  document.write(str.toUpperCase() + "<br>");
+  // include
+  document.write(str.includes("r") + "<br>")
+  // trim
+  // let str5 = "       HI!     "
+  // console.log("Trim: " + str5.trim())
+  // document.write("Trim: " + str5.trim())
+  document.write(str.substring(1));
+
+
+
+</script>
+
+</html>

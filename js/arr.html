@@ -1,0 +1,174 @@
+87% of storage used … If you run out, you can't create, edit, and upload files. Get 100 GB of storage for $1.99 $0 for 1 month.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    
+
+
+    <script>
+        
+        arr = [1,2,3, "name","address",['a','b','c'],{name:"hello"}]
+        document.write(arr)
+        document.write(arr.length)
+
+        fruits = ["apple","banana","orange","mango","papaya"]
+        document.write("<br>Original Array: "+ fruits)
+
+        document.write("<br>First Member: "+ fruits[0])
+        document.write("<br>Last Member: "+ fruits[fruits.length-1])
+
+        // to add members in array
+        // push - add member to the end
+        // unshift - add member to the start
+        fruits.push('GUAVA')
+        document.write("<br>Push result: "+ fruits)
+        fruits.unshift('GRAPES')
+        document.write("<br>Unshift Result: "+ fruits)
+
+        // to remove from array
+        // pop - to remove from the end
+        // shift - to remove from the start
+        removed_items = fruits.pop()
+        document.write("<br>POP result: "+ fruits)
+        document.write("<br>removed fruits: "+removed_items)
+        
+        removed_items = fruits.shift()
+        document.write("<br>shift result: "+ fruits)
+        document.write("<br>removed fruits: "+removed_items)
+
+        // to add or remove from array - SPLICE
+        // spice(index, number, [items to add])
+        removed_items = fruits.splice(1,2,"lITCHHI","sTRAWBERRY","wATERMELON")
+        document.write("<br>SPLICE RESULT: "+ fruits)
+        document.write("<br>removed fruits: "+removed_items)
+
+        fruits.sort()
+        document.write("<br>SORT RESULT: "+ fruits)
+
+        fruits.reverse()
+        document.write("<br>REVERSE RESULT: "+ fruits)
+
+        // slice(start index, last index) - last index not included
+        new_fruits = fruits.slice(1,4)
+        document.write("<br>NEW ARRAY: "+ new_fruits)
+        document.write("<br>Original Array: "+ fruits)
+        
+        // find, findIndex
+        // search = fruits.find("apple")
+        // document.write("Search = " + search)
+
+        fruits = ["apple","banana","orange","mango","papaya"]
+// map  
+        fruits.map((item)=>{ document.write(`<li>${item}</li>`)})
+        new_array = fruits.map((item)=>{ return item})
+        fruits.forEach((item)=>{ document.write(`<h4>${item}</h4>`)})
+
+
+// template literal - ` `
+
+        search = fruits.filter((fruit)=>{return fruit.match('p')})
+        document.write("<br>Search = " + search)
+        
+        /*
+1 2 3 4 5 6 7 8 9 10
+        forEach, map, filter, reduce 
+        (item) => {return item *item}
+1 - > 1
+2 -> 4
+3 -> 9*/
+
+
+
+
+
+
+    </script>
+</body>
+</html>
+
+
+
+87% of storage used … If you run out, you can't create, edit, and upload files. Get 100 GB of storage for $1.99 $0 for 1 month.
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Functions</title>
+</head>
+
+<body>
+
+
+    <script>
+        num = [1213, 121, 136, 145, 156, 174, 214, 101, 156, 121]
+
+        // num.forEach((number,i)=>document.write(`<li>${i}: ${number}</li>`))
+        // num.map((number,i)=>document.write(`<h6>${i}: ${number}</h6>`))
+
+        result = num.filter((item) => { return item > 150 })
+        document.write("Result = " + result)
+
+        result = num.find(item => item > 150)
+        document.write("<br>Result = " + result)
+
+        result = num.findIndex(item => item > 150)
+        document.write("<br>Result = " + result)
+
+        result = num.some(item => item > 150)
+        document.write("<br> Result = " + result)
+
+        result = num.some(item => item < 100)
+        document.write("<br> Result = " + result)
+
+        result = num.every(item => item > 112)
+        document.write("<br> Result = " + result)
+
+        // result = ''
+        // fruits = ["apple","banana","orange","mango","papaya"]
+        // search = prompt("Enter a fruit name to search")
+
+        // result = fruits.find(item=>item.match(search))
+        // resultIndex = fruits.findIndex(item=>item.match(search))
+        // if(result){
+        //     document.write(`<br>${result} is found at ${resultIndex+1}`)
+        // }
+        // else{
+        //     document.write(`<br>${search} is not found.`)
+        // }
+
+        document.write("<br>num = " + num)
+        sum = num.reduce((acc, cur) => {
+            document.write(`<br>acc=${acc}, cur=${cur}`)
+            return acc + cur
+        })
+
+        document.write("<br>Sum = " + sum)
+
+        prod = num.reduce((acc,cur)=>acc*cur)
+        document.write("<br>Product = " + prod)
+
+        diff = num.reduce((acc,cur)=>acc-cur)
+        document.write("<br>Difference = " + diff)
+
+        document.write("<br>num = " + num)
+        sum = num.reduceRight((acc, cur) => {
+            document.write(`<br>acc=${acc}, cur=${cur}`)
+            return acc + cur
+        })
+        document.write("<br>Sum = " + sum)
+
+
+
+    </script>
+</body>
+
+</html>
