@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function | JS</title>
+</head>
+
+<body>
+  <!-- <div>
+    Function
+  </div> -->
+
+  <script>
+    // syntax
+    // camelCase ,snake_case
+
+    // declarations function name (..parameter){ declarration}
+
+    // call name(argument)
+
+
+    async function asyncCall() {
+      const result = await resolveAfter2Seconds();
+      console.log('calling');
+      console.log(result);
+      // Expected output: "resolved"
+    }
+
+    // function with no argument and no parameter,
+    function addNumber(a, b) {
+      let add = a + b
+      return add;
+    }
+
+    // arrow function 
+    // const var = ()=>{}
+
+    const multiplyNumber = (a, b) => {
+      let multiply = a * b;
+      setInterval(() => {
+        document.write("interval" + "<br>")
+      }, 2000);
+      setTimeout(() => {
+        document.write("Print ME" + "<br>")
+
+      }, 2000);
+      return multiply;
+    }
+
+    // asynchronous function
+    const async_funtion = async (a, b) => {
+      let m = a + b
+      await setTimeout(() => {
+        console.log("aaa")
+      }, 2000);
+      console.log(m)
+      console.log("Adding two Numbers: " + addNumber(2, 3));
+    }
+
+
+    // parameter and argument
+    document.write("Adding two Numbers: " + addNumber(2, 3) + "<br>");
+    // document.write("Multiply two Numbers: " + multiplyNumber(4, 3));
+    // document.write("Multiply two Numbers: " + );
+    // async_funtion(4, 3)
+
+    function resolveAfter2Seconds() {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve('resolved');
+        }, 10000);
+      });
+    }
+
+
+    asyncCall();
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+</body>
+
+</html>
