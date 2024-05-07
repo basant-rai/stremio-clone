@@ -12,7 +12,7 @@
     Function
   </div> -->
 
-  <script>
+  <!-- <script>
     // syntax
     // camelCase ,snake_case
 
@@ -76,16 +76,39 @@
 
 
     asyncCall();
+  </script> -->
 
+  <script>
+    //  Promise
 
+    data = ["apple", "ball", "cat", "dog"]
 
+    const show = () => {
+      setTimeout(() => {
+        data.map(item => document.write(`<li>${item}</li>`))
+      }, [3000])
+    }
 
-
-
-
-
-
-
+    // new Promise((accept, fail) => { })
+    // 
+    const add = () => {
+      return promise = new Promise((accept, fail) => {
+        setTimeout(() => {
+          let error = false
+          if (!error) {
+            data.push("elephant")
+            accept()
+          }
+          else {
+            fail()
+          }
+        }, [4000])
+      })
+    }
+    add()
+      .then(show)
+      // .then(()=>show())
+      .catch(() => console.log("error occured"))
 
   </script>
 

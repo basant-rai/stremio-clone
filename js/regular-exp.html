@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regex</title>
+</head>
+
+<body>
+
+  <form action="" onsubmit="return form_validate()">
+    <div>
+      <label for="email">Email:</label>
+      <input type="text" id="email" onkeyup="email_validate()">
+      <span id="msg_email"></span><br>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="text" id="password" onkeyup="password_validation()">
+      <span id="msg_password"></span><br>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+
+  <button type="button" onclick={login()}>Login</button>
+  <button type="button" onclick={show()}>Show</button>
+
+
+  <script>
+
+
+    function login() {
+      localStorage.setItem("token", "asasasasas");
+      sessionStorage.setItem("sessionId", "45");
+    }
+
+    function show() {
+      document.write(localStorage.getItem("token"));
+      document.write(sessionStorage.getItem("sessionId"));
+    }
+
+    function display_msg(msg, id, color) {
+      document.getElementById(id).innerHTML = msg
+      document.getElementById(id).style.color = color
+    }
+
+    function form_validate() {
+      if (fname_validation() && phone_validation() && email_validate() && password_validation() && age_validation()) {
+        return true
+      }
+      else {
+        return false
+      }
+    }
+
+    function email_validate() {
+      let email = document.getElementById("email").value
+      if (!email.match(/^[a-zA-Z][a-zA-Z0-9_\-\.]+[@][a-z]+[.](com)$/)) {
+        display_msg("invalid email", "msg_email", "red")
+        return false
+      }
+      else {
+        display_msg("valid email", "msg_email", "green")
+        return true
+      }
+    }
+
+    function password_validation() {
+      let password = document.getElementById("password").value
+      if (!password.match(/^[A-Z]/)) {
+        display_msg("Paswword must contain uppercase at first", "msg_password", "red")
+        return false;
+      } else if (!password.match(/[a-z]/)) {
+        display_msg("Paswword must contain lowercase", "msg_password", "red")
+        return false;
+      } else if (!password.match(/[0-9]/)) {
+        display_msg("Paswword must contain number", "msg_password", "red")
+        return false;
+      } else if (!password.match(/[&%#_\$\-\*\.@]/)) {
+        display_msg("Paswword must contain special character", "msg_password", "red")
+        return false;
+      } else if (password.length < 8) {
+        display_msg("Pasword must be at least 8 characters", "msg_password", "red")
+        return false;
+      } else if (password.length > 30) {
+        display_msg("Password must not exceed 30 characters", "msg_password", "red")
+        return false;
+      } else {
+        display_msg("Valid Password", "msg_password", "blue")
+        return true;
+      }
+    }
+  </script>
+
+</body>
+
+</html>
