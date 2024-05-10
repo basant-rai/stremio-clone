@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math | JS</title>
+</head>
+
+<body>
+  <button type="button" onclick={randomNum()}>Click Me</button>
+
+  <h5 id="random"></h5>
+
+
+  <script>
+
+    // spread and rest operator
+
+    // Rest operator
+
+    // ...
+
+    function display(...values) {
+      document.write(values + "<br>")
+    }
+
+    display("Alesh", "1234566789", "Male", "Kathmandu", "asasasas")
+
+    // Spread operator
+    const arr = ["a", "b", "c"]
+    const arr1 = ["10", 2]
+
+
+    const obj = {
+      name: "Alesh",
+      address: "Kathmandu",
+      phone_number: "123456789"
+    }
+
+    document.write(obj.name + "<br>")
+
+    const show = { ...obj, name: "Basant" }
+
+    const { name, address, phone_number } = obj;
+
+    document.write(name, address, phone_number)
+
+    document.write(show.name + "<br>");
+    document.write(show.phone_number);
+
+    let num = 10;
+    function randomNum() {
+      let num = Math.random() * 1000000
+      document.getElementById("random").innerHTML = "9841" + Math.floor(num)
+    }
+
+
+
+
+    // document.write("<br>" + Math.PI)
+
+    num = num * 10
+    document.write("<br>" + num)
+
+    num = Math.pow(num, 3)
+    document.write("<br>" + num)
+
+    num = Math.sqrt(10)
+    document.write("<br>" + num)
+
+    number = Math.random() * 100
+    document.write("<br>Random(0-10): " + number)
+
+    num = Math.trunc(number)
+    document.write("<br>Trunc: " + num)
+
+    num = Math.round(number)
+    document.write("<br>Round: " + num)
+
+    num = Math.floor(number)
+    document.write("<br>Floor: " + num)
+
+    num = Math.ceil(number)
+    document.write("<br>Ceil: " + num)
+
+    num = number.toFixed(2)
+    document.write("<br>Fixed(2):" + num)
+    num = number.toFixed(4)
+    document.write("<br>Fixed(4):" + num)
+
+    num = number.toPrecision(4)
+    document.write("<br>Precision(4):" + num)
+    num = number.toPrecision(2)
+    document.write("<br>Precision(2):" + num)
+
+  </script>
+</body>
+
+</html>
