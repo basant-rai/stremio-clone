@@ -1,19 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./tailwind/**/*.{html,js}",
-    "./js/**/*.{html,js}"
-
+    "./src/**/*.{js,jsx,ts,tsx}",
+    'node_modules/flowbite-react/lib/esm/**/*.js'
   ],
   theme: {
     extend: {
-      container: {
-        screens: {
-          "2xl": "1440px"
+      colors: {
+        primary: {
+          900: "#23162C"
         }
       }
     },
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 }
 
